@@ -2,7 +2,6 @@ package net.deanguy.sladermod.block;
 
 import net.deanguy.sladermod.SladerMod;
 import net.deanguy.sladermod.item.ModItems;
-import net.minecraft.client.resources.model.Material;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
