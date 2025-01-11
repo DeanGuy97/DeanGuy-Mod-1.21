@@ -17,6 +17,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
+//testing commits
+
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SladerMod.MOD_ID);
