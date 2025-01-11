@@ -2,9 +2,12 @@ package net.deanguy.sladermod.block;
 
 import net.deanguy.sladermod.SladerMod;
 import net.deanguy.sladermod.item.ModItems;
+import net.minecraft.client.resources.model.Material;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,11 +24,15 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BLOOD_BlOCK = registerBlock("blood_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
+                    .strength(1.5f).sound(SoundType.HONEY_BLOCK)));
+
+    public static final RegistryObject<Block> EXPERIENCE_BlOCK = registerBlock("experience_block",
+            () -> new DropExperienceBlock(UniformInt.of(81,297),BlockBehaviour.Properties.of()
+                    .strength(0.5f).sound(SoundType.HONEY_BLOCK)));
 
     public static final RegistryObject<Block> STEEL_BlOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

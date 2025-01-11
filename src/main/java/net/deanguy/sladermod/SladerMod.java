@@ -59,6 +59,7 @@ public class SladerMod {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.BLOOD_BlOCK);
             event.accept(ModBlocks.STEEL_BlOCK);
+            event.accept(ModBlocks.EXPERIENCE_BlOCK);
         }
     }
 

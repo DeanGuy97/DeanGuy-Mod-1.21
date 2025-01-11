@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemsDisplayParameters, output) -> {
                         output.accept(ModItems.BLOODBALL.get());
                         output.accept(ModBlocks.BLOOD_BlOCK.get());
+                        output.accept(ModBlocks.EXPERIENCE_BlOCK.get());
 
             }).build());
 

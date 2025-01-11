@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "sladermod:blood_block",
+    "sladermod:experience_block",
+    "sladermod:steel_block"
+  ]
+}
