@@ -2,6 +2,7 @@ package net.deanguy.sladermod;
 
 import com.mojang.logging.LogUtils;
 import net.deanguy.sladermod.block.ModBlocks;
+import net.deanguy.sladermod.item.ModCreativeModeTabs;
 import net.deanguy.sladermod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,6 +32,8 @@ public class SladerMod {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
