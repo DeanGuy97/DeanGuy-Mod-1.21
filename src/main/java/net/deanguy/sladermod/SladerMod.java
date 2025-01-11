@@ -1,6 +1,7 @@
 package net.deanguy.sladermod;
 
 import com.mojang.logging.LogUtils;
+import net.deanguy.sladermod.block.ModBlocks;
 import net.deanguy.sladermod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,7 @@ public class SladerMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -49,6 +51,11 @@ public class SladerMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.STEEL_INGOT);
             event.accept(ModItems.BLOODBALL);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BLOOD_BlOCK);
+            event.accept(ModBlocks.STEEL_BlOCK);
         }
     }
 

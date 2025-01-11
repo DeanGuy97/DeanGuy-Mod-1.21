@@ -1,4 +1,6 @@
 {
   "item.sladermod.steel_ingot": "Steel Ingot",
-  "item.sladermod.bloodball": "Bloodball"
+  "item.sladermod.bloodball": "Bloodball",
+  "item.sladermod.blood_block": "Blood Block",
+  "item.sladermod.steel_block": "Steel Block"
 }
