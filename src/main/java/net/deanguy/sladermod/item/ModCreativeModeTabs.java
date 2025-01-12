@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemsDisplayParameters, output) -> {
                         output.accept(ModItems.STEEL_INGOT.get());
                         output.accept(ModBlocks.STEEL_BlOCK.get());
+                        output.accept(ModItems.CHISEL.get());
 
                     }).build());
 

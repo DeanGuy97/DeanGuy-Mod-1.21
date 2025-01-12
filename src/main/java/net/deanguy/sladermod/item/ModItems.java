@@ -1,6 +1,7 @@
 package net.deanguy.sladermod.item;
 
 import net.deanguy.sladermod.SladerMod;
+import net.deanguy.sladermod.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> BLOODBALL = ITEMS.register("bloodball",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(1000)));
 
 
     public static void register(IEventBus eventBus) {

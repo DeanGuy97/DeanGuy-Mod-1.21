@@ -61,6 +61,10 @@ public class SladerMod {
             event.accept(ModBlocks.STEEL_BlOCK);
             event.accept(ModBlocks.EXPERIENCE_BlOCK);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.CHISEL);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
