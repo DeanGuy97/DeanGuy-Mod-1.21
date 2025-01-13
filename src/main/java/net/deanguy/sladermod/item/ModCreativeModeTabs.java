@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STEEL_NUGGET.get());
                         output.accept(ModItems.STEEL_INGOT.get());
                         output.accept(ModBlocks.STEEL_BlOCK.get());
+                        output.accept(ModBlocks.RECYCLER_BlOCK.get());
                         output.accept(ModItems.CHISEL.get());
 
                     }).build());
@@ -34,6 +35,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLOODBALL.get());
                         output.accept(ModBlocks.BLOOD_BlOCK.get());
                         output.accept(ModBlocks.EXPERIENCE_BlOCK.get());
+                        output.accept(ModBlocks.HEALING_BlOCK.get());
 
             }).build());
 

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "sladermod:bloodball"
+    },
+    "A": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "pattern": [
+    "#A#",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sladermod:healing_block"
+  }
+}

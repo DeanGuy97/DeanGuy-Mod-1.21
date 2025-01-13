@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "sladermod:block/healing_block"
+    }
+  }
+}

@@ -8,6 +8,8 @@
   "block.sladermod.blood_block": "Blood Block",
   "block.sladermod.steel_block": "Steel Block",
   "block.sladermod.experience_block": "Experience Block",
+  "block.sladermod.healing_block": "Healing Block",
+  "block.sladermod.recycler_block": "Recycler Block",
 
   "creativetab.sladermod.steel": "Steel",
   "creativetab.sladermod.blood": "Blood"

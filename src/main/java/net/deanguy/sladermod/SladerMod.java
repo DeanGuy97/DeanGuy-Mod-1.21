@@ -67,6 +67,11 @@ public class SladerMod {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.CHISEL);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.HEALING_BlOCK);
+            event.accept(ModBlocks.RECYCLER_BlOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

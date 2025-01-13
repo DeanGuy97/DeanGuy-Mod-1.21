@@ -1,6 +1,8 @@
 package net.deanguy.sladermod.block;
 
 import net.deanguy.sladermod.SladerMod;
+import net.deanguy.sladermod.block.custom.HealingBlock;
+import net.deanguy.sladermod.block.custom.RecyclerBlock;
 import net.deanguy.sladermod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -32,6 +34,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> STEEL_BlOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> HEALING_BlOCK = registerBlock("healing_block",
+            () -> new HealingBlock(BlockBehaviour.Properties.of()
+                    .strength(1.5f)));
+
+    public static final RegistryObject<Block> RECYCLER_BlOCK = registerBlock("recycler_block",
+            () -> new RecyclerBlock(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

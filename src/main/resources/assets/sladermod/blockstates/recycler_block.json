@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "sladermod:block/recycler_block"
+    }
+  }
+}
