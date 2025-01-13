@@ -1,6 +1,8 @@
 package net.deanguy.sladermod.item;
 
 import net.deanguy.sladermod.SladerMod;
+import net.deanguy.sladermod.block.ModBlocks;
+import net.deanguy.sladermod.item.custom.FuelBlockItem;
 import net.deanguy.sladermod.item.custom.ChiselItem;
 import net.deanguy.sladermod.item.custom.FuelItem;
 import net.minecraft.world.item.Item;
@@ -40,6 +42,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> COMPRESSED_BIOMASS = ITEMS.register("compressed_biomass",
             () -> new FuelItem(new Item.Properties(), 3200));
+
+    public static final RegistryObject<Item> COMPRESSED_BIOMASS_BLOCK_ITEM = ITEMS.register("compressed_biomass_block_item",
+            () -> new FuelBlockItem(new Item.Properties(), 16000, ModBlocks.COMPRESSED_BIOMASS_BLOCK.get()));
 
 
     public static void register(IEventBus eventBus) {
