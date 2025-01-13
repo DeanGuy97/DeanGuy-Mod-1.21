@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "steel_ingot",
+  "group": "steel_dust",
   "ingredients": [
     {
       "item": "minecraft:iron_ingot"
@@ -30,6 +30,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "sladermod:steel_ingot"
+    "id": "sladermod:steel_dust"
   }
 }

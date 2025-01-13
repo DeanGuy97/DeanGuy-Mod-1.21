@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "steel_ingot",
+  "ingredient": {
+    "item": "sladermod:steel_dust"
+  },
+  "result": {
+    "id": "minecraft:steel_ingot"
+  }
+}
