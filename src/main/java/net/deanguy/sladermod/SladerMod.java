@@ -53,6 +53,7 @@ public class SladerMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.STEEL_DUST);
+            event.accept(ModItems.STEEL_NUGGET);
             event.accept(ModItems.STEEL_INGOT);
             event.accept(ModItems.BLOODBALL);
         }

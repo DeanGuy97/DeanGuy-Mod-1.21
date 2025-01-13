@@ -19,6 +19,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.sladermod.steel"))
                     .displayItems((itemsDisplayParameters, output) -> {
                         output.accept(ModItems.STEEL_DUST.get());
+                        output.accept(ModItems.STEEL_NUGGET.get());
                         output.accept(ModItems.STEEL_INGOT.get());
                         output.accept(ModBlocks.STEEL_BlOCK.get());
                         output.accept(ModItems.CHISEL.get());
