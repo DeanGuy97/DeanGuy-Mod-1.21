@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "Z": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "K": {
+      "item": "minecraft:dried_kelp"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "ZCZ",
+    "KKK"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sladermod:compressed_biomass"
+  }
+}

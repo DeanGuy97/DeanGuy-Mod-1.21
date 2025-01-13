@@ -56,12 +56,14 @@ public class SladerMod {
             event.accept(ModItems.STEEL_NUGGET);
             event.accept(ModItems.STEEL_INGOT);
             event.accept(ModItems.BLOODBALL);
+            event.accept(ModItems.COMPRESSED_BIOMASS);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.BLOOD_BlOCK);
             event.accept(ModBlocks.STEEL_BlOCK);
             event.accept(ModBlocks.EXPERIENCE_BlOCK);
+            event.accept(ModBlocks.COMPRESSED_BIOMASS_BLOCK);
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
@@ -71,6 +73,12 @@ public class SladerMod {
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.HEALING_BlOCK);
             event.accept(ModBlocks.RECYCLER_BlOCK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.GOLDEN_FILET_MIGNON);
+            event.accept(ModItems.GOLDEN_KOBE_STEAK);
+            event.accept(ModItems.GOLDEN_WAYGU_STEAK);
         }
     }
 

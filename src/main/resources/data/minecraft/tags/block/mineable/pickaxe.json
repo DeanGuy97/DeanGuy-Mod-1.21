@@ -4,6 +4,7 @@
     "sladermod:blood_block",
     "sladermod:experience_block",
     "sladermod:steel_block",
-    "sladermod:recycler_block"
+    "sladermod:recycler_block",
+    "sladermod:compressed_biomass_block"
   ]
 }

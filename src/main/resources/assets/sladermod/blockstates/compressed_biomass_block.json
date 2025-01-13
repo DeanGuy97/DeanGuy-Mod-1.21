@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "sladermod:block/compressed_biomass_block"
+    }
+  }
+}

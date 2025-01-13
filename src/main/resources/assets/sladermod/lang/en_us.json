@@ -4,13 +4,19 @@
   "item.sladermod.steel_ingot": "Steel Ingot",
   "item.sladermod.bloodball": "Bloodball",
   "item.sladermod.chisel": "Chisel",
+  "item.sladermod.golden_filet_mignon": "Golden Filet Mignon",
+  "item.sladermod.golden_kobe_steak": "Golden Kobe Steak",
+  "item.sladermod.golden_wagyu_steak": "Golden Wagyu Steak",
+  "item.sladermod.compressed_biomass": "Compressed Biomass",
 
   "block.sladermod.blood_block": "Blood Block",
   "block.sladermod.steel_block": "Steel Block",
   "block.sladermod.experience_block": "Experience Block",
   "block.sladermod.healing_block": "Healing Block",
   "block.sladermod.recycler_block": "Recycler Block",
+  "block.sladermod.compressed_biomass_block": "Compressed Biomass Block",
 
   "creativetab.sladermod.steel": "Steel",
-  "creativetab.sladermod.blood": "Blood"
+  "creativetab.sladermod.blood": "Blood",
+  "creativetab.sladermod.slader_tab": "Slader Mod"
 }

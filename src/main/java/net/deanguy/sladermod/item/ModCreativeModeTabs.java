@@ -39,6 +39,29 @@ public class ModCreativeModeTabs {
 
             }).build());
 
+    public static final RegistryObject<CreativeModeTab> SLADER_TAB = CREATIVE_MODE_TABS.register("slader_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COMPRESSED_BIOMASS.get()))
+                    .withTabsBefore(BLOOD_TAB.getId())
+                    .title(Component.translatable("creativetab.sladermod.slader_tab"))
+                    .displayItems((itemsDisplayParameters, output) -> {
+                        output.accept(ModItems.STEEL_DUST.get());
+                        output.accept(ModItems.STEEL_NUGGET.get());
+                        output.accept(ModItems.STEEL_INGOT.get());
+                        output.accept(ModBlocks.STEEL_BlOCK.get());
+                        output.accept(ModBlocks.RECYCLER_BlOCK.get());
+                        output.accept(ModItems.CHISEL.get());
+                        output.accept(ModItems.BLOODBALL.get());
+                        output.accept(ModBlocks.BLOOD_BlOCK.get());
+                        output.accept(ModBlocks.EXPERIENCE_BlOCK.get());
+                        output.accept(ModBlocks.HEALING_BlOCK.get());
+                        output.accept(ModItems.GOLDEN_FILET_MIGNON.get());
+                        output.accept(ModItems.GOLDEN_KOBE_STEAK.get());
+                        output.accept(ModItems.GOLDEN_WAYGU_STEAK.get());
+                        output.accept(ModItems.COMPRESSED_BIOMASS.get());
+                        output.accept(ModBlocks.COMPRESSED_BIOMASS_BLOCK.get());
+
+                    }).build());
+
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
