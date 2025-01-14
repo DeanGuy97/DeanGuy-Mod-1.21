@@ -12,20 +12,33 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class ChiselItem extends Item {
-    private static final Map<Block, Block> CHISEL_MAP =
-            Map.of(
-                    Blocks.STONE, Blocks.STONE_BRICKS,
-                    Blocks.END_STONE, Blocks.END_STONE_BRICKS,
-                    Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS,
-                    Blocks.BLACKSTONE, Blocks.POLISHED_BLACKSTONE_BRICKS,
-                    Blocks.MUD,Blocks.MUD_BRICKS,
-                    Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BRICKS,
-                    Blocks.NETHERRACK,Blocks.NETHER_BRICKS,
-                    Blocks.CLAY,Blocks.BRICKS
-            );
+    private static final Map<Block, Block> CHISEL_MAP = new HashMap<>();
+
+    static {
+        // Forward mappings
+        CHISEL_MAP.put(Blocks.STONE, Blocks.STONE_BRICKS);
+        CHISEL_MAP.put(Blocks.END_STONE, Blocks.END_STONE_BRICKS);
+        CHISEL_MAP.put(Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS);
+        CHISEL_MAP.put(Blocks.BLACKSTONE, Blocks.POLISHED_BLACKSTONE_BRICKS);
+        CHISEL_MAP.put(Blocks.MUD, Blocks.MUD_BRICKS);
+        CHISEL_MAP.put(Blocks.QUARTZ_BLOCK, Blocks.QUARTZ_BRICKS);
+        CHISEL_MAP.put(Blocks.NETHERRACK, Blocks.NETHER_BRICKS);
+        CHISEL_MAP.put(Blocks.CLAY, Blocks.BRICKS);
+
+        // Reverse mappings
+        CHISEL_MAP.put(Blocks.STONE_BRICKS, Blocks.STONE);
+        CHISEL_MAP.put(Blocks.END_STONE_BRICKS, Blocks.END_STONE);
+        CHISEL_MAP.put(Blocks.DEEPSLATE_BRICKS, Blocks.DEEPSLATE);
+        CHISEL_MAP.put(Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.BLACKSTONE);
+        CHISEL_MAP.put(Blocks.MUD_BRICKS, Blocks.MUD);
+        CHISEL_MAP.put(Blocks.QUARTZ_BRICKS, Blocks.QUARTZ_BLOCK);
+        CHISEL_MAP.put(Blocks.NETHER_BRICKS, Blocks.NETHERRACK);
+        CHISEL_MAP.put(Blocks.BRICKS, Blocks.CLAY);
+    }
 
     public ChiselItem(Item.Properties pProperties) {
         super(pProperties);

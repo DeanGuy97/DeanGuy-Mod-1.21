@@ -8,6 +8,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -79,6 +80,13 @@ public class SladerMod {
             event.accept(ModItems.GOLDEN_FILET_MIGNON);
             event.accept(ModItems.GOLDEN_KOBE_STEAK);
             event.accept(ModItems.GOLDEN_WAYGU_STEAK);
+        }
+    }
+
+    @SubscribeEvent
+    public void onFuelRegistry(FurnaceFuelBurnTimeEvent event) {
+        if (event.getItemStack().getItem() == ModItems.COMPRESSED_BIOMASS_BLOCK_ITEM.get()) {
+            event.setBurnTime(16000); // Set burn time for Compressed Biomass Block
         }
     }
 

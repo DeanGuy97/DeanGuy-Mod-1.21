@@ -44,7 +44,7 @@ public class ModItems {
             () -> new FuelItem(new Item.Properties(), 3200));
 
     public static final RegistryObject<Item> COMPRESSED_BIOMASS_BLOCK_ITEM = ITEMS.register("compressed_biomass_block_item",
-            () -> new FuelBlockItem(new Item.Properties(), 16000, ModBlocks.COMPRESSED_BIOMASS_BLOCK.get()));
+            () -> new FuelBlockItem(new Item.Properties(), 32000, ModBlocks.COMPRESSED_BIOMASS_BLOCK.get()));
 
 
     public static void register(IEventBus eventBus) {
