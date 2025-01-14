@@ -23,7 +23,8 @@ public class ChiselItem extends Item {
                     Blocks.BLACKSTONE, Blocks.POLISHED_BLACKSTONE_BRICKS,
                     Blocks.MUD,Blocks.MUD_BRICKS,
                     Blocks.QUARTZ_BLOCK,Blocks.QUARTZ_BRICKS,
-                    Blocks.NETHERRACK,Blocks.NETHER_BRICKS
+                    Blocks.NETHERRACK,Blocks.NETHER_BRICKS,
+                    Blocks.CLAY,Blocks.BRICKS
             );
 
     public ChiselItem(Item.Properties pProperties) {
