@@ -64,7 +64,7 @@ public class SladerMod {
             event.accept(ModBlocks.BLOOD_BlOCK);
             event.accept(ModBlocks.STEEL_BlOCK);
             event.accept(ModBlocks.EXPERIENCE_BlOCK);
-            event.accept(ModBlocks.COMPRESSED_BIOMASS_BLOCK);
+            event.accept(ModItems.COMPRESSED_BIOMASS_BLOCK_ITEM.get());
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

@@ -4,9 +4,12 @@ import net.deanguy.sladermod.SladerMod;
 import net.deanguy.sladermod.block.custom.HealingBlock;
 import net.deanguy.sladermod.block.custom.RecyclerBlock;
 import net.deanguy.sladermod.item.ModItems;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -16,6 +19,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -29,11 +33,23 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COMPRESSED_BIOMASS_BLOCK = registerBlock("compressed_biomass_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.5f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+                    .strength(1.5f).sound(SoundType.STONE).requiresCorrectToolForDrops()){
+                @Override
+                public void appendHoverText(ItemStack pStack, Item.TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+                    pTooltipComponents.add(Component.translatable("tooltip.sladermod.compressed_biomass_block.tooltip"));
+                    super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+                }
+            });
 
     public static final RegistryObject<Block> EXPERIENCE_BlOCK = registerBlock("experience_block",
             () -> new DropExperienceBlock(UniformInt.of(81,297),BlockBehaviour.Properties.of()
-                    .strength(0.5f).sound(SoundType.HONEY_BLOCK)));
+                    .strength(0.5f).sound(SoundType.HONEY_BLOCK)){
+                @Override
+                public void appendHoverText(ItemStack pStack, Item.TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+                    pTooltipComponents.add(Component.translatable("tooltip.sladermod.experience_block.tooltip"));
+                    super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+                }
+            });
 
     public static final RegistryObject<Block> STEEL_BlOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of()

@@ -5,8 +5,8 @@
   "item.sladermod.bloodball": "Bloodball",
   "item.sladermod.chisel": "Brick Chisel",
   "item.sladermod.golden_filet_mignon": "Golden Filet Mignon",
-  "item.sladermod.golden_kobe_steak": "Golden Kobe Steak",
-  "item.sladermod.golden_wagyu_steak": "Golden Wagyu Steak",
+  "item.sladermod.golden_kobe_steak": "§bGolden Kobe Steak",
+  "item.sladermod.golden_wagyu_steak": "§dGolden Wagyu Steak",
   "item.sladermod.compressed_biomass": "Compressed Biomass",
 
   "block.sladermod.blood_block": "Blood Block",
@@ -18,5 +18,18 @@
 
   "creativetab.sladermod.steel": "Steel",
   "creativetab.sladermod.blood": "Blood",
-  "creativetab.sladermod.slader_tab": "Slader Mod"
+  "creativetab.sladermod.slader_tab": "Slader Mod",
+
+  "tooltip.sladermod.recycler_block.tooltip": "§2RECYCLES §fSteel to Iron",
+  "tooltip.sladermod.healing_block.tooltip": "§cHEALS§f Passive Mobs and Players",
+  "tooltip.sladermod.experience_block.tooltip": "Break for §aEXPERIENCE",
+  "tooltip.sladermod.compressed_biomass_block.tooltip": "Twice as Effective as a Coal Block",
+
+  "tooltip.sladermod.chisel.shift_down": "§2CHANGES§f Blocks to Bricks",
+  "tooltip.sladermod.chisel": "Press §eShift§r for more Information!",
+
+  "tooltip.sladermod.golden_filet_mignon": "Tastes like a §6Golden Carrot",
+  "tooltip.sladermod.golden_kobe_steak": "Tastes like a §6Golden Apple",
+  "tooltip.sladermod.golden_wagyu_steak": "Tastes like half an §6Enchanted Apple",
+  "tooltip.sladermod.compressed_biomass.tooltip": "Twice as Effective as Coal"
 }
