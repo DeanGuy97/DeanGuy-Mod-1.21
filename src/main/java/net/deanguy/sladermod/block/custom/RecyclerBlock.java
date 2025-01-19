@@ -2,6 +2,7 @@ package net.deanguy.sladermod.block.custom;
 
 import net.deanguy.sladermod.block.ModBlocks;
 import net.deanguy.sladermod.item.ModItems;
+import net.deanguy.sladermod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
@@ -25,15 +26,11 @@ public class RecyclerBlock extends Block {
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
         if (pEntity instanceof ItemEntity itemEntity) {
 
-            // Handle steel dust
-            if (itemEntity.getItem().getItem() == ModItems.STEEL_DUST.get()) {
+            // Handle steel dust and steel ingot via tags
+            if (isValidItem(itemEntity.getItem())) {
                 itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
             }
 
-            // Handle steel ingot
-            if (itemEntity.getItem().getItem() == ModItems.STEEL_INGOT.get()) {
-                itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
-            }
 
             // Handle steel block
             if (itemEntity.getItem().getItem() == ModBlocks.STEEL_BlOCK.get().asItem()) {
@@ -47,6 +44,10 @@ public class RecyclerBlock extends Block {
         }
 
         super.stepOn(pLevel, pPos, pState, pEntity);
+    }
+
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override
